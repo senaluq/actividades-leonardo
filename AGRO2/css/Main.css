@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:ital,wght@0,500;1,400&display=swap");
+:root {
+  --body-font: "Poppins", sans-serif;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: .875rem;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#cards1 {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#card {
+  width: 320px;
+  height: 400px;
+  background-color:rgba(167, 167, 167, 0.75);
+  border-radius: 1rem;
+  padding: 4rem 2rem 0;
+  color: #E9EAEC;
+  overflow-y: hidden;
+  margin: 10px;
+}
+#card_img {
+  position: absolute;
+  width: 260px;
+  filter: drop-shadow(5px 10px 15px rgba(8, 9, 13, 0.4));
+  margin: 10px;
+
+}
+
+
+#card_data {
+  transform: translateY(13.2rem);
+  text-align: center;
+}
+#card_title {
+  font-size: var(--h1-font-size);
+  color: #E9EAEC;
+  margin-bottom: 0.5rem;
+}
+#card_preci {
+  display: inline-block;
+  font-size: var(--h2-font-size);
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+}
+#card_description {
+  font-size: var(--small-font-size);
+  text-align: initial;
+  margin-bottom: 1.5rem;
+  opacity: 0;
+}
+#card_button {
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.75rem 2rem;
+  background-color: #fc7323;
+  color: #E9EAEC;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: 0.2s;
+  opacity: 0;
+}
+#card_button:hover {
+  box-shadow: 0 18px 40px -12px rgba(242, 162, 12, 0.35);
+}
+#card_img, #card_data, #card_title, #card_preci, #card_description {
+  transition: 0.5s;
+}
+
+#card2 {
+  background-color: #fc7323;
+}
+
+#card:hover #card_img {
+  transform: translate(-1.5rem, -9.5rem) rotate(-30deg);
+}
+#card:hover #card_data {
+  transform: translateY(4.8rem);
+}
+#card:hover #card_title {
+  transform: translateX(-2.3rem);
+  margin-bottom: 0;
+}
+#card:hover #card_preci {
+  transform: translateX(-6.8rem);
+}
+#card:hover #card_description,
+#card:hover #card_button {
+  transition-delay: 0.2s;
+  opacity: 1;
+}
+
+/*# 2 */
+
+#cards2 {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#card2 {
+  width: 320px;
+  height: 400px;
+  background-color:#fc7323;
+  border-radius: 1rem;
+  padding: 4rem 2rem 0;
+  color: #E9EAEC;
+  overflow-y: hidden;
+  margin: 10px;
+}
+#card_img2 {
+  position: absolute;
+  width: 260px;
+  filter: drop-shadow(5px 10px 15px rgba(8, 9, 13, 0.4));
+}
+#card_data2 {
+  transform: translateY(13.2rem);
+  text-align: center;
+}
+#card_title2 {
+  font-size: var(--h1-font-size);
+  color: #E9EAEC;
+  margin-bottom: 0.5rem;
+}
+#card_preci2 {
+  display: inline-block;
+  font-size: var(--h2-font-size);
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+}
+#card_description2 {
+  font-size: var(--small-font-size);
+  text-align: initial;
+  margin-bottom: 1.5rem;
+  opacity: 0;
+}
+#card_button2 {
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.75rem 2rem;
+  background-color:  #9F3919;
+  color: #E9EAEC;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: 0.2s;
+  opacity: 0;
+}
+#card_button2:hover {
+  box-shadow: 0 18px 40px -12px rgba(242, 162, 12, 0.35);
+}
+#card_img2, #card_data2, #card_title2, #card_preci2, #card_description2 {
+  transition: 0.5s;
+}
+
+#card2 {
+  background-color: #fc7323;
+}
+
+#card2:hover #card_img2 {
+  transform: translate(-1.5rem, -9.5rem) rotate(-30deg);
+}
+#card2:hover #card_data2 {
+  transform: translateY(4.8rem);
+}
+#card2:hover #card_title2 {
+  transform: translateX(-2.3rem);
+  margin-bottom: 0;
+}
+#card2:hover #card_preci2 {
+  transform: translateX(-6.8rem);
+}
+#card2:hover #card_description2,
+#card2:hover #card_button2 {
+  transition-delay: 0.2s;
+  opacity: 1;
+}
+
